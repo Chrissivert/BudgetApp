@@ -1,0 +1,23 @@
+TableRow:selected .amountExpense {
+    -fx-text-fill: DarkGoldenRod;
+}
+
+TableRow  .amountExpense {
+    -fx-text-fill: DarkGoldenRod;
+}
+
+.amountExpense {
+    -fx-text-fill: DarkGoldenRod;
+}
+
+TableRow:selected .amountIncome {
+    -fx-text-fill: blue;
+}
+
+TableRow .amountIncome {
+    -fx-text-fill: blue;
+}
+
+.amountIncome {
+    -fx-text-fill: blue;
+}

@@ -1,0 +1,23 @@
+TableRow:selected .amountExpense {
+    -fx-text-fill: red;
+}
+
+TableRow  .amountExpense {
+    -fx-text-fill: red;
+}
+
+.amountExpense {
+    -fx-text-fill: red;
+}
+
+TableRow:selected .amountIncome {
+    -fx-text-fill: green;
+}
+
+TableRow .amountIncome {
+    -fx-text-fill: green;
+}
+
+.amountIncome {
+    -fx-text-fill: green;
+}

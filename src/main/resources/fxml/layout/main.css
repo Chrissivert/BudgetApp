@@ -1,0 +1,96 @@
+.root {
+    -fx-padding: 20px;
+}
+
+.content {
+    -fx-padding: 20px 0 0 0;
+}
+
+.rounded {
+    -fx-background-radius: 10px;
+}
+
+/*TableRow:selected .amountExpense {*/
+/*    -fx-text-fill: red;*/
+/*}*/
+
+/*TableRow  .amountExpense {*/
+/*    -fx-text-fill: red;*/
+/*}*/
+
+/*TableRow:selected .amountIncome {*/
+/*    -fx-text-fill: green;*/
+/*}*/
+
+/*TableRow .amountIncome {*/
+/*    -fx-text-fill: green;*/
+/*}*/
+
+TableRow:selected {
+    -fx-text-background-color: black;
+}
+
+
+TableRow:selected {
+-fx-background-color:  #e6e6e6;
+}
+
+.toolBar {
+    -fx-padding: 10px;
+}
+
+.bg-success {
+    -fx-background-color: #4284e1;
+}
+
+.bg-danger {
+    -fx-background-color: #e14242;
+}
+
+.bg-main {
+    -fx-background-color: #ffffff;
+}
+.bg-darkgrey {
+    -fx-background-color: #e3e3e3;
+}
+
+.base-darkgrey {
+    -fx-base: #e3e3e3;
+}
+
+.bg-black {
+    -fx-background-color: #000000;
+}
+
+.bg-primary {
+    -fx-background-color: rgba(138, 194, 211, 0.95);
+}
+
+.bg-secondary {
+    -fx-background-color: #cbd3db;
+}
+
+.base-white {
+    -fx-base: #ffffff;
+}
+
+.base-secondary {
+    -fx-base: #cbd3db;
+}
+
+.white {
+    -fx-text-fill: #ffffff;
+}
+
+.border {
+    -fx-border-color: #cbd3db;
+    -fx-border-width: 1px;
+}
+
+.links .selectedLabel {
+    -fx-font-weight: bold;
+}
+
+.clickable {
+    -fx-cursor: hand;
+}

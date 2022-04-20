@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" prefHeight="262.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="title" text="">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="content" text="Are you sure you want to delete this account, and all its Transactions?">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;">
+            <children>
+                <Button fx:id="deleteAccountYes" mnemonicParsing="false" text="Yes." />
+                <Button fx:id="deleteAccountNo" mnemonicParsing="false" text="No." />
+            </children>
+            <padding>
+                <Insets left="5.0" right="5.0" />
+            </padding>
+            <VBox.margin>
+                <Insets bottom="5.0" top="5.0" />
+            </VBox.margin>
+        </HBox>
+
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+</VBox>
+

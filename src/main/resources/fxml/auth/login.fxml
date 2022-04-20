@@ -1,0 +1,34 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<!--Add registration form with full name, username and password-->
+<?import javafx.scene.control.Hyperlink?>
+<GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.idata1002.g08.auth.LoginController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10" prefWidth="100" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10" prefWidth="100" />
+    </columnConstraints>
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <children>
+        <Label text="Login Form" GridPane.columnSpan="2">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label text="Username" GridPane.rowIndex="1" />
+        <Label text="Password" GridPane.rowIndex="2" />
+        <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1" onKeyPressed="#handleKeyPress" />
+        <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" onKeyPressed="#handleKeyPress" />
+        <Button fx:id="submitButton" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#login"/>
+<!--        Add text link to register (goToRegistration)-->
+        <Hyperlink text="Don't have an account? Register here" GridPane.columnSpan="2" GridPane.rowIndex="4" onAction="#goToRegistration"/>
+    </children>
+</GridPane>

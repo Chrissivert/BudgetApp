@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--Add registration form with full name, username and password-->
+
+<GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.idata1002.g08.auth.RegistrationController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10" prefWidth="30" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10" prefWidth="30" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10" prefWidth="75" />
+    </columnConstraints>
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <children>
+        <Label text="Registration Form" GridPane.columnSpan="2">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label text="Full Name" GridPane.rowIndex="1" />
+        <Label text="Username" GridPane.rowIndex="2" />
+        <Label text="Password" GridPane.rowIndex="3" />
+        <TextField fx:id="fullNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2"/> <!--onKeyPressed="#handleKeyPress"/>-->
+        <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2"/> <!--onKeyPressed="#handleKeyPress"/>-->
+        <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="2" />
+        <Button fx:id="submitButton" id="submitButton" onAction="#register" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button fx:id="submitBankButton" id="submitBankButton" onAction="#register" text="Register with bank connection" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <Hyperlink text="Already have an account? Login here" GridPane.columnSpan="2" GridPane.rowIndex="5" onAction="#goToLogin"/>
+    </children>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

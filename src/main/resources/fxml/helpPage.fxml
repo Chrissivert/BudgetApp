@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="265.0" spacing="20.0" style="-fx-border-color: #000000;">
+         <children>
+            <Button fx:id="buttonOverview" layoutX="11.0" layoutY="116.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: Transperent;" text="Overview">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonDashBoard" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: Transperent;" text="Dashboard">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonTransactions" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: Transperent;" text="Transactions">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonBudget" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: Transperent;" text="Budget">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonSettings" layoutX="11.0" layoutY="61.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="163.0" style="-fx-background-color: Transperent;" text="Settings">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox fx:id="helpPageOverview" alignment="CENTER" layoutX="43.0" layoutY="10.0" prefHeight="400.0" prefWidth="523.0" spacing="10.0">
+         <children>
+            <Label style="-fx-background-color: #cbd3db; -fx-border-color: #cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Most tables has a right click functionality" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label style="-fx-background-color: #cbd3db; -fx-border-color: cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="You can sort a table by presing on top of a column" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="helpPageDashboard" alignment="CENTER" prefHeight="400.0" prefWidth="523.0" spacing="10.0">
+         <children>
+            <Label layoutX="10.0" layoutY="201.0" style="-fx-border-color: #cbd3db; -fx-background-color: #cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="If you right click on the bottom rigth category tabel, you can go to transactions with that category as a filter " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="129.0" style="-fx-border-color: #cbd3db; -fx-background-color: #cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="The linechart works by showing your account balance on different days you can save a new acount balance in settings with editig or adding an account" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="helpPageTransactions" alignment="CENTER" layoutX="181.0" layoutY="10.0" prefHeight="400.0" prefWidth="523.0" spacing="10.0">
+         <children>
+            <Label style="-fx-background-color: #cbd3db; -fx-border-color: #cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="To the right you can see all filters, you can use muliple at a time" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox fx:id="helpPageBudget" alignment="CENTER" layoutX="326.0" layoutY="10.0" prefHeight="400.0" prefWidth="523.0" spacing="10.0">
+         <children>
+            <Label layoutX="10.0" layoutY="166.0" style="-fx-background-color: #cbd3db; -fx-border-color: #cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Start by adding a period in the toolbar at the top. The period is used to group your budgets. You could for example have one weekly budget, one monthly budget etc." textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="166.0" style="-fx-background-color: #cbd3db; -fx-border-color: #cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="After you have added a period you can add budgets within one of your periods by clicking the 'Add budget' button."> textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="166.0" style="-fx-background-color: #cbd3db; -fx-border-color: #cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Each budget can be linked to several categories and will automatically show the spent amount based on the transactions with the associated categories."> textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="helpPageSettings" alignment="CENTER" layoutX="420.0" layoutY="10.0" prefHeight="400.0" prefWidth="523.0" spacing="10.0">
+         <children>
+            <Label style="-fx-background-color: #cbd3db; -fx-border-color: cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Right-cliking the a category " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="153.0" style="-fx-background-color: #cbd3db; -fx-border-color: cbd3db; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Some banks may not suport the banking API" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

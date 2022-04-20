@@ -1,0 +1,19 @@
+<!--Create an explanation text at the top of the screen that welcomes the user to the PersonalEconomy application and explains the difference between using local mode (Cannot login on other PCs, all data is stored locally)
+and remote mode (data is stored on NTNU's server, which means you can log on to the account on any computer, but this mode therefor requires the user to be on the network or use their VPN).
+Then have two buttons to start the application in local or remote mode-->
+
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.idata1002.g08.layout.StartupController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Welcome to Personal Economy!" />
+      <Label layoutX="14.0" layoutY="45.0" text="This application is designed to help you keep track of your personal economy." />
+      <Label layoutX="14.0" layoutY="76.0" text="You can run the application in two modes:" />
+      <Label layoutX="14.0" layoutY="107.0" text="Local mode: All data is stored locally on your computer, but you cannot log in on other computers." />
+      <Label layoutX="14.0" layoutY="138.0" text="Remote mode: All data is stored on NTNU's server. You can log in on any computer, but you need to be on the NTNU network or use their VPN." />
+      <Button layoutX="14.0" layoutY="169.0" mnemonicParsing="false" onAction="#initLocalMode" text="Local mode" />
+      <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#initRemoteMode" text="Remote mode" />
+   </children>
+</AnchorPane>

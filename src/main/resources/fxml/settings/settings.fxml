@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<GridPane styleClass="content" id="settings" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.idata1002.g08.settings.SettingsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES"/>
+    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <GridPane style="-fx-border-color: #000000;" VBox.vgrow="ALWAYS" alignment="CENTER" GridPane.halignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="buttonBankConnection" mnemonicParsing="false" prefHeight="79.0" prefWidth="173.0" style="-fx-background-color: Transperent;" text="Bank connection" onAction="#showBankConnection"/>
+                  <Button fx:id="buttonAccessibility" mnemonicParsing="false" prefHeight="79.0" prefWidth="173.0" style="-fx-background-color: Transperent;" text="Accessebility" GridPane.rowIndex="1" onAction="#showAccessibility" />
+                  <Button fx:id="buttonCategories" layoutX="11.0" layoutY="131.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="173.0" style="-fx-background-color: Transperent;" text="Categories" GridPane.rowIndex="2" onAction="#showCategories" />
+                  <Button fx:id="buttonAccounts" layoutX="11.0" layoutY="131.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="173.0" style="-fx-background-color: Transperent;" text="Accounts" GridPane.rowIndex="3" onAction="#showAccounts" />
+                  <Button fx:id="buttonGDPR" layoutX="11.0" layoutY="171.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="173.0" style="-fx-background-color: Transperent;" text="GDPR" GridPane.rowIndex="4" onAction="#showGDPR" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <BorderPane fx:id="settingsStartingPage" prefHeight="495.0" prefWidth="430.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-background-color: #cbd3db; -fx-border-color: #cbd3db;" visible="false" VBox.vgrow="ALWAYS">
+               <center>
+                  <Label alignment="CENTER" text="Please chose a setting choice" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <GridPane fx:id="bankConnection" style="-fx-background-color: Transpernet; -fx-border-color: #cbd3db; -fx-border-radius: 15px; -fx-background-radius: 15px;" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FlowPane alignment="CENTER">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Remove account from banking API" />
+                        <Button fx:id="removeAccount" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" onAction="#removeAccountBankAPI">
+                           <FlowPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </FlowPane.margin>
+                        </Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER" layoutX="16.0" layoutY="16.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Add account with banking API" />
+                        <Button fx:id="addAccount" text="ADD" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" onAction="#addAccountBankAPI">
+                           <FlowPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </FlowPane.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER" layoutX="16.0" layoutY="16.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Add account with banking API" />
+                        <Button fx:id="syncAccount" text="Syncronice Accounts from Bank" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" onAction="#syncAccountApi">
+                           <FlowPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </FlowPane.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="notifications" style="-fx-background-color: Transpernet; -fx-border-color: #cbd3db; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <ToggleButton mnemonicParsing="false" text="Projected exceeding of budgetPeriod" GridPane.rowIndex="1" fx:id="exceedingOfBudget" />
+                  <ToggleButton alignment="BASELINE_CENTER" mnemonicParsing="false" text="Not spending entire budgetPeriod -&gt; Do you want to move it to savings instead" GridPane.rowIndex="2" fx:id="budgetExcessSavings" />
+                  <ToggleButton mnemonicParsing="false" text="Budget exceeded" fx:id="budgetExceeded" />
+                  <ToggleButton mnemonicParsing="false" text="Projected to not reach savings-goal" GridPane.rowIndex="3"  fx:id="savingsGoal" />
+                  <ToggleButton mnemonicParsing="false" text="Rule to add notification when getting a" GridPane.rowIndex="4" fx:id="notificationWhenGettingA" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="rules" style="-fx-background-color: Transpernet; -fx-border-color: #cbd3db; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FlowPane alignment="CENTER">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Manage rules" />
+                        <Button fx:id="manageRules" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" >
+                           <FlowPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </FlowPane.margin>
+                        </Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER" layoutX="16.0" layoutY="16.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="temptext" />
+                        <Button id="tempbutton" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0">
+                           <FlowPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </FlowPane.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="accessibility" style="-fx-background-color: Transpernet; -fx-border-color: #cbd3db; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FlowPane alignment="CENTER">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Choose colorblind mode" />
+                        <MenuButton fx:id="colorblindChoice"/>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER" layoutX="16.0" layoutY="16.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Change text-size,font" />
+                        <ChoiceBox fx:id="textFontChoice" prefWidth="150.0" onAction="#textFontChoiceBox" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="categories" style="-fx-background-color: Transpernet; -fx-border-color: #cbd3db; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FlowPane alignment="CENTER" GridPane.rowIndex="0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                     </padding>
+                     <Button text="Add Category" mnemonicParsing="false" prefHeight="15.0" onAction="#addCategory">
+                        <FlowPane.margin>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                        </FlowPane.margin>
+                     </Button>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER" layoutX="16.0" layoutY="16.0" GridPane.rowIndex="1">
+                     <TableView fx:id="categoryTable" prefHeight="200.0" prefWidth="200.0" />
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="settingsDashboard" style="-fx-background-color: Transpernet; -fx-border-color: #cbd3db; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FlowPane alignment="CENTER">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Edit modularization of dashboard" />
+                        <Button fx:id="mangeDashboard" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" >
+                           <FlowPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </FlowPane.margin>
+                        </Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="settingsGDPR" style="-fx-background-color: Transpernet; -fx-border-color: #cbd3db; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FlowPane alignment="CENTER">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Right to access and see your personal data, and get it in a commonly, machine-readable CSV-file." />
+                        <Button text="Get CSV-file" onAction="#getCSVFile"/>
+
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER" layoutX="16.0" layoutY="16.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" text="Delete account and all of my Data." />
+                        <Button text="Delete Account" onAction="#deleteUser"/>
+
+                     </children>
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="settingsAccount" style="-fx-background-color: Transpernet; -fx-border-color: #cbd3db; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FlowPane alignment="CENTER" >
+                        <children>
+                              <Button text="Add account" onAction="#addAccount"/>
+                        </children>
+                        <GridPane.margin>
+                           <Insets />
+                        </GridPane.margin>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER" layoutX="16.0" layoutY="16.0" GridPane.rowIndex="1">
+                     <VBox>
+                     <Label alignment="BASELINE_CENTER" text="Select account to edit or delete." />
+                     <ChoiceBox fx:id="accountChoice" />
+                        <padding>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </padding>
+                     </VBox>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER" layoutX="16.0" layoutY="16.0" GridPane.rowIndex="2">
+                        <children>
+
+                           <Button text="Edit selected account" onAction="#editAccount"/>
+                           <Button text="Remove selected account" onAction="#deleteAccount"/>
+
+                        </children>
+                  </FlowPane>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

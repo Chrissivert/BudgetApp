@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.CheckBox?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="5.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="headerLabel" text="Create a transaction">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #cbd3db; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Label text="Date">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <DatePicker fx:id="datePicker" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #cbd3db; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Label text="Type">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="typeChoice" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #cbd3db; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Label text="Description">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="descriptionField" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #cbd3db; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Label text="Amount">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="amountField" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #cbd3db; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Label text="Category">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="categoryChoice" prefWidth="150.0" />
+            <CheckBox fx:id="noCategoryCheckBox" mnemonicParsing="false" text="No category" style="-fx-spacing: 15; -fx-background-radius: 15; -fx-border-radius: 15 "/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #cbd3db; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Label text="Account">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="accountChoice" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <Button fx:id="addButton" mnemonicParsing="false" text="Add transaction" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

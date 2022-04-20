@@ -1,0 +1,15 @@
+TableRow:selected .amountExpense {
+    -fx-text-fill: Crimson;
+}
+
+TableRow  .amountExpense {
+    -fx-text-fill: Crimson;
+}
+
+TableRow:selected .amountIncome {
+    -fx-text-fill: blue;
+}
+
+TableRow .amountIncome {
+    -fx-text-fill: blue;
+}
