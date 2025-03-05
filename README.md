@@ -1,6 +1,12 @@
 # Personal Economy App
 IDATA1002_2023_g08
 
+Created by:
+- [@Anders Lund](https://github.com/AnderzL7)
+- [@Daniel Neset](https://github.com/DanielNeset)
+- [@Jonas Olsen](https://github.com/jonasOlsenNTNU)
+- [@Brage Solem](https://github.com/BrageSolem)
+- Chris Sivert
 
 
 ## About this project
