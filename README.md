@@ -1,6 +1,4 @@
 # Personal Economy App
-IDATA1002_2023_g08
-
 Created Spring 2023
 
 Created by:
