@@ -1,4 +1,9 @@
 # Personal Economy App
+![image](https://github.com/user-attachments/assets/1dc1d1fc-6bca-4f35-8ed4-db23451de120)
+![image](https://github.com/user-attachments/assets/3879503b-358e-40c3-b1b1-e4ec5b87b6e0)
+
+# Authors & Creation
+
 Created Spring 2023
 
 Created by:
